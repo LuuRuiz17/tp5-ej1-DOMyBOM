@@ -45,9 +45,6 @@
       </nav>
     </header>
     <main class="container text-center mt-5">
-      <button class="btn btn-primary" onclick="generarNumero()" id="btnComenzar">
-        Comenzar el juego
-      </button>
       <form class="mt-3 bg-secondary-subtle p-5 w-75 mx-auto d-none rounded-2" id="oculto">
         <div class="d-flex justify-content-start">
           <label for="numeroAleatorio" class="titulo">Número aleatorio: </label>
@@ -61,7 +58,10 @@
           <button class="btn btn-warning ms-3 mt-3">Comprobar resultado</button>
         </div>
       </form>
-      <p class="text-success titulo mt-5 d-none text-center" id="mensajeVictoria">¡Felicidades! Adivinaste el número mágico.</p>
+      <p class="text-success titulo mt-3 d-none text-center" id="mensajeVictoria">¡Felicidades! Adivinaste el número mágico.</p>
+      <button class="btn btn-primary" onclick="generarNumero()" id="btnComenzar">
+        Comenzar el juego
+      </button>
     </main>
     <footer class="bg-dark-subtle text-center">
       <p class="py-4">&copy Todos los derechos reservados.</p>
