@@ -15,8 +15,8 @@ function generarNumero() {
     console.log(random);
 }
 
-
-function adivinarNumero() {
+function adivinarNumero(e) {
+    e.preventDefault();
     const input = document.getElementById("intentoNumero");
     const intentoNumero = input.value;
     const numeroAleatorio = document.getElementById("numeroAleatorio");
@@ -35,3 +35,6 @@ function adivinarNumero() {
         }
     }
 }
+
+const formulario = document.querySelector("form");
+formulario.addEventListener("submit" , adivinarNumero);
