@@ -45,25 +45,55 @@
       </nav>
     </header>
     <main class="container text-center mt-5">
-      <h1 class="text-info text-center mb-5">Adivina el número 🕵️</h1>
-      <form class="mt-3 bg-secondary-subtle p-5 w-75 mx-auto d-none rounded-2" id="oculto">
-        <div class="d-flex justify-content-start">
-          <label for="numeroAleatorio" class="titulo">Número aleatorio: </label>
-          <input type="number" id="numeroAleatorio" class="ms-3 text-center d-none bg-success" />
+      <h1 class="text-info mb-3">Adivina el número 🕵️</h1>
+      <form id="oculto" class="d-none p-4 rounded border border-2 border-secondary-subtle mt-4">
+        <div class="row mb-3 justify-content-end">
+          <div class="col-12 col-md-6 mb-3">
+            <label for="numeroAleatorio" class="form-label fw-bold text-start w-100"
+              >Número aleatorio:</label
+            >
+            <input
+              type="number"
+              id="numeroAleatorio"
+              class="form-control text-center bg-success text-white d-none"
+            />
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label for="intentoNumero" class="form-label fw-bold text-start w-100"
+              >Intenta adivinar el número:</label
+            >
+            <input
+              type="number"
+              id="intentoNumero"
+              class="form-control text-center mt-2"
+              placeholder="Escribe tu intento"
+            />
+          </div>
         </div>
-        <div class="d-flex justify-content-start mt-3">
-          <label for="numeroAleatorio" class="titulo mt-3"
-            >Intenta adivinar el número:
-          </label>
-          <input type="number" id="intentoNumero" class="ms-3 mt-3 text-center" />
-          <button class="btn btn-warning ms-3 mt-3">Comprobar resultado</button>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4">
+            <button type="submit" class="btn btn-warning w-100">
+              Comprobar
+            </button>
+          </div>
         </div>
       </form>
-      <p class="text-success titulo mt-3 d-none text-center" id="mensajeVictoria">🎉 ¡Felicidades! Adivinaste el número mágico 🎉</p>
-      <button class="btn btn-primary" onclick="generarNumero()" id="btnComenzar">
+
+      <p id="mensajeVictoria" class="text-success fw-bold mt-4 d-none">
+        🎉 ¡Felicidades! Adivinaste el número mágico 🎉
+      </p>
+
+      <button
+        class="btn btn-primary mt-2"
+        onclick="generarNumero()"
+        id="btnComenzar"
+      >
         Comenzar el juego
       </button>
     </main>
+
     <footer class="bg-dark-subtle text-center">
       <p class="py-4">&copy Todos los derechos reservados.</p>
     </footer>
@@ -75,4 +105,3 @@
     <script src="./js/script.js"></script>
   </body>
 </html>
-
