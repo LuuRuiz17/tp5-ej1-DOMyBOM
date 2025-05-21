@@ -42,6 +42,7 @@ function adivinarNumero(e) {
     mensajeVictoria.classList.remove("d-none");
     btnComenzar.textContent = "Intentar de nuevo";
     btnComenzar.classList.remove("d-none");
+    btnComenzar.classList.add("mb-3");
     
   } else if (intento < numeroMagico) {
     alert("El número mágico es mayor que el que ingresaste.");

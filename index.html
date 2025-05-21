@@ -46,10 +46,15 @@
     </header>
     <main class="container text-center mt-5">
       <h1 class="text-info mb-3">Adivina el número 🕵️</h1>
-      <form id="oculto" class="d-none p-4 rounded border border-2 border-secondary-subtle mt-4">
+      <form
+        id="oculto"
+        class="d-none p-4 rounded border border-2 border-secondary-subtle mt-4"
+      >
         <div class="row mb-3 justify-content-end">
-          <div class="col-12 col-md-6 mb-3">
-            <label for="numeroAleatorio" class="form-label fw-bold text-start w-100"
+          <div class="col-12 mb-3">
+            <label
+              for="numeroAleatorio"
+              class="form-label fw-bold text-start w-100"
               >Número aleatorio:</label
             >
             <input
@@ -59,8 +64,10 @@
             />
           </div>
 
-          <div class="col-12 col-md-6">
-            <label for="intentoNumero" class="form-label fw-bold text-start w-100"
+          <div class="col-12">
+            <label
+              for="intentoNumero"
+              class="form-label fw-bold text-start w-100"
               >Intenta adivinar el número:</label
             >
             <input
@@ -73,7 +80,7 @@
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-12 col-md-4">
+          <div class="col-12">
             <button type="submit" class="btn btn-warning w-100">
               Comprobar
             </button>
